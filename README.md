@@ -1,6 +1,6 @@
 # ClaimSense AI
 
-AI-powered medical claim pre-submission validation engine built with Next.js 14.
+AI-powered medical claim pre-submission validation engine built with Next.js 15.
 
 ## Overview
 
@@ -16,7 +16,7 @@ ClaimSense AI analyzes medical claims before submission to catch billing errors,
 
 ## Tech Stack
 
-- [Next.js 14](https://nextjs.org/) (App Router)
+- [Next.js 15](https://nextjs.org/) (App Router)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [OpenAI SDK](https://github.com/openai/openai-node) (`gpt-4o-mini`)
