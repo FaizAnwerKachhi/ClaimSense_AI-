@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0f0f0f;
+  --paper: #fafaf7;
+  --surface: #ffffff;
+  --rule: #e2e0d9;
+  --accent: #1a4fd6;
+  --accent-light: #e8eefb;
+  --muted: #6b6b6b;
+  --green: #166534;
+  --green-bg: #dcfce7;
+  --green-border: #86efac;
+  --amber: #92400e;
+  --amber-bg: #fef3c7;
+  --amber-border: #fde68a;
+  --red: #991b1b;
+  --red-bg: #fee2e2;
+  --red-border: #fca5a5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #e8e6e0;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
