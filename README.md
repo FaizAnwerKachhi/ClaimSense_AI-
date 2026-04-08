@@ -28,7 +28,7 @@ ClaimSense AI analyzes medical claims before submission to catch billing errors,
 ### 1. Clone & install
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/FaizAnwerKachhi/ClaimSense_AI-.git
 cd ClaimSense_AI-
 npm install
 ```
@@ -134,6 +134,24 @@ cpt,icd,icd2,modifier,patient_id,member_id,dos,payer,billed_amount,pos,npi
 | Variable | Description |
 |---|---|
 | `OPENAI_API_KEY` | Your OpenAI API key (required) |
+| `DATABASE_URL` | Postgres connection string (optional, for future persistence) |
+
+## Deployment (Vercel + optional Supabase/Neon)
+
+### Deploy to Vercel
+
+1. Push this repo to GitHub.
+2. Import the repo in [Vercel](https://vercel.com/new).
+3. Add environment variable in Vercel dashboard: `OPENAI_API_KEY=sk-...`
+4. Click **Deploy** — Vercel auto-detects Next.js.
+
+### Optional Postgres (Supabase or Neon)
+
+If you want to persist analysis results in future:
+
+1. Create a free database at [Supabase](https://supabase.com) or [Neon](https://neon.tech).
+2. Copy the connection string to `DATABASE_URL` in your `.env.local` and in Vercel's environment variables.
+3. (Prisma setup can be added in a future iteration — the current MVP uses in-memory state.)
 
 ## License
 
